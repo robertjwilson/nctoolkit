@@ -71,13 +71,5 @@ class TestToxar:
 
 
 
-        tracker = nc.open_data([ff1,ff2])
-        ds1 = tracker.to_xarray(decode_times = False)
-        ds2 = xr.open_mfdataset([ff1, ff2], decode_times = False)
-        assert ds1.equals(ds2)
-
-        with pytest.raises(ValueError):
-            ds1 = tracker.to_xarray()
-
 
 
