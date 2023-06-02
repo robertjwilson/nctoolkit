@@ -43,6 +43,5 @@ jobs:
             pip install --user codecov
             pip install nctoolkit
             pip install dask
-            coverage run -m pytest tests/test_*.py
-            coverage report
-            coverage xml
+            pytest tests/test_*.py
+            
