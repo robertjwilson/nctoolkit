@@ -2,8 +2,10 @@
 import atexit
 import signal
 
-if __name__ == '__main__':
-                freeze_support()
+if __name__ == '__main__': 
+    __spec__ = None
+
+
 
 if True:
     from nctoolkit.api import (
