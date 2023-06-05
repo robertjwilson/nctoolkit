@@ -9,6 +9,5 @@ import netCDF4
 import hvplot
 import panel
 import dill
-import python-dateutil
 import matplotlib
 
