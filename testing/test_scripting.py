@@ -2,6 +2,7 @@ import glob
 import os
 import multiprocessing
 
+import nctoolkit
 
 session_info = dict()
 if __name__ == "__main__":
