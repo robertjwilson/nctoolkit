@@ -1,13 +1,9 @@
-# import nctoolkit as nc
+import glob
+import os
+from multiprocessing import Manager
 
-# ds = nc.open_data("data/sst.mon.mean.nc")
-# ds.tmean()
-# ds.run()
 
-import xarray
-import netCDF4
-import hvplot
-import panel
-import dill
-import matplotlib
-
+session_info = dict()
+mgr = Manager()
+nc_safe = list()
+nc_safe_par = Manager().list()
