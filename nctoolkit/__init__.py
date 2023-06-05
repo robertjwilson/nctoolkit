@@ -2,8 +2,10 @@
 import atexit
 import signal
 
+from multiprocessing import freeze_support
+
 if __name__ == '__main__': 
-    __spec__ = None
+    freeze_support()
 
 
 
