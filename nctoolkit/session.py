@@ -4,6 +4,7 @@ import os
 if __name__ == "__main__":
     with multiprocessing.Manager() as manager:
         nc_safe_par = manager.list()
+        temp_dirs_par = manager.list()
 
 session_info = dict()
 nc_safe = list()
@@ -76,7 +77,6 @@ def get_protected():
 html_files = []
 
 temp_dirs = list()
-temp_dirs_par = Manager().list()
 
 
 def append_tempdirs(ff):
