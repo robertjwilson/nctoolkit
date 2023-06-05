@@ -1,7 +1,8 @@
 import glob
 import os
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
+if True:
     with multiprocessing.Manager() as manager:
         nc_safe_par = manager.list()
         temp_dirs_par = manager.list()
