@@ -1,8 +1,8 @@
 import glob
 import os
 
-if __name__ == "__main__":
-# if True:
+# if __name__ == "__main__":
+if True:
     import multiprocessing
     with multiprocessing.Manager() as manager:
         nc_safe_par = manager.list()
