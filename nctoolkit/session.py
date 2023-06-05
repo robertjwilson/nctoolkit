@@ -5,6 +5,7 @@ if __name__ == "__main__":
     with multiprocessing.Manager() as manager:
         nc_safe_par = manager.list()
         temp_dirs_par = manager.list()
+        nc_protected_par = manager.list()
 
 session_info = dict()
 nc_safe = list()
@@ -102,7 +103,6 @@ def get_tempdirs():
 
 
 nc_protected = list()
-nc_protected_par = Manager().list()
 
 
 def session_files():
