@@ -3,8 +3,9 @@ import os
 
 # if __name__ == "__main__":
 if True:
-    import multiprocessing
-    with multiprocessing.Manager() as manager:
+    import multiprocess
+    # ctx = multiprocessing.get_context('spawn')
+    with multiprocess.Manager() as manager:
         nc_safe_par = manager.list()
         temp_dirs_par = manager.list()
         nc_protected_par = manager.list()

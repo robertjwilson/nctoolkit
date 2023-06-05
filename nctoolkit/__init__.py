@@ -2,12 +2,6 @@
 import atexit
 import signal
 
-from multiprocessing import freeze_support
-
-if __name__ == '__main__': 
-    main()
-
-
 
 if True:
     from nctoolkit.api import (
@@ -53,6 +47,7 @@ try:
     from importlib.metadata import version as _version
 except ImportError:
     from importlib_metadata import version as _version
+
 
 try:
     __version__ = _version("nctoolkit")
